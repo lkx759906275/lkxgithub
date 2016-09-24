@@ -1,0 +1,126 @@
+@charset "utf-8";
+.public-head{
+	/*width: 100%;*/
+	/*height: 80px;*/
+	border-top:4px solid #F08D18;	
+	padding-top: 9px;
+	padding-bottom:7px;
+	background: #fff;
+}
+.public-container{
+	position: relative;
+	margin: 0 auto;		
+	width: 1140px;
+}
+.public-logo{
+	float: left;
+	background: url("../images/logo.png") no-repeat left top;	
+	
+}
+.public-logo span{
+	display: inline-block;
+	font: 24px/80px "宋体";
+	font-weight: bold;
+	color: #4B4A48;	
+	padding-left: 216px;
+	height: 80px;
+	transform: rotate(357deg);
+	background: url("../images/logor.png") no-repeat right 52px;
+	cursor: pointer;
+
+}
+.public-zc{
+	float: right;
+	/*width:381px;*/
+		
+}
+.public-zc ul{
+	float:right;	
+	
+}
+.public-zc li{
+	float: left;
+	padding-top: 8px;
+}
+.public-zc li a{
+	font-size: 14px;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-right: 1px solid #000;
+}
+.public-zc .item{
+	padding-top: 4px;
+}
+.public-zc li a:hover{
+	color:#F4AA52;
+}
+.public-zc .onli{color: #F4AA52;}
+
+.public-zc .ts{
+	border:none;
+}
+.public-zc .tsimg{
+	padding-left: 0px;
+	padding-right: 0px;
+	border:none;
+}
+/*.public-zc span{	
+	float: right;
+	margin-top: 4px;
+}*/
+.public-zc p{
+	clear:right;
+	margin-top:19px;	
+	float: right;
+	height: 25px;
+	text-indent: 32px;	
+	font:16px/25px "微软雅黑";
+	font-weight: bold;
+	color: #4B4A48;
+	background: url("../images/phone.png")no-repeat left;
+}
+.head-nav{
+	/*width: 100%;*/
+	height: 52px;
+	background: #4B4A48;
+}
+.head-navcontainer{
+	width: 1140px;
+	margin: 0 auto;
+
+}
+.head-navcontainer li{
+	float: left;
+}
+.head-navcontainer a{
+	display:inline-block;
+	text-align: center;
+	width: 120px;
+	height: 52px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color:#fff;
+	line-height: 52px;
+}
+.head-navcontainer a:hover{
+	background: url("../images/navlibg.png")no-repeat;
+}
+.head-navcontainer .tsli{
+	background: url("../images/navlibg.png")no-repeat;
+}
+.head-banner{
+	width: 1440px;
+	height: 320px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	
+}
+.head-banner ul{ 
+	width:2880px;	
+	left: 0;
+	position: relative;
+}
+.head-banner ul li{
+	float: left;
+}
