@@ -191,10 +191,11 @@ a{
 .news-item1{
 	position: relative;
 }
-.news-content .data-new{
+.news-item1 .data-new{
 	position: absolute;
 	right: 0;
-	top:5px;
+	top: 1px;
+	
 }
 
 /*视频中心*/
