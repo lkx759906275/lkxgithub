@@ -1,0 +1,278 @@
+@charset "utf-8"
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+
+body{
+	background:url(../images/background.jpg);
+}
+
+/*头部部分*/
+
+
+/*top的作用就是给个背景颜色*/
+.top{
+	width: 100%;
+	background: #fff;
+	height: 112px;
+}
+/*toper的作用是设置居中1200px*/
+
+/*LOGO*/
+.logos{
+	padding-left: 0;
+	padding-right:0;
+
+}
+/*logo标题部分*/
+.logo-font{
+	font-size: 38px;
+	line-height: 112px;
+	color: #373737;	
+}
+
+
+/*导航*/
+.nav-nav .navbar{margin-bottom: 0;}
+.nav-nav .navbar-default{
+	background: #97CFFF;
+}
+.nav-nav .navbar-nav>li>a{
+		padding-left: 44px;
+		padding-right: 44px;
+		color: #fff;
+		font-size: 15px;
+	}
+/*缩放后的小按钮*/
+.nav-nav .navbar-toggle{
+
+}
+/*下拉列表项目*/
+.nav-nav .navbar-collapse{
+	/*text-align: center;*/
+}
+/*设置导航高度92px*/
+.nav-nav .navbar-nav {
+    margin: 21px -15px;
+    
+}
+
+
+/*内容*/
+
+/*大白色背景板*/
+.content-all{
+	margin-top: 106px;
+	background: #fff;
+	padding-right:25px;
+	padding-left: 5px;
+	padding-bottom: 60px;
+	position: relative;	
+
+}
+/*文章块*/
+.produce{
+	background: #97CFFF;
+	width: 282px;
+	height: 341px;
+	color: #fff;
+	margin-left: 5px;
+	margin-right: 5px;
+
+	position: absolute;
+	top: -50px;
+}
+	.produce h2{	
+		background: #397FBB;
+		font-size: 15px;
+		line-height: 60px;
+		text-align: center;	
+	}
+	.produce p{
+		padding-top: 25px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 12px;
+		line-height: 21px;
+	}
+
+/*最新产品标题*/
+.content-all h3{
+	width: 294px;
+	border-top:1px solid #439DE9;
+	line-height: 41px;
+	font-size: 15px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 86px;
+	margin-bottom: 100px;
+
+}
+/*最新产品展示*/
+.nb{width: 285px;
+		margin: 0 auto;
+	}
+
+/*咨询内容*/
+.div-content{
+	margin-left: 37px;
+	margin-right: 37px;
+}
+.date-d{
+	padding-left: 19px;
+	background: url(../images/ling.jpg)no-repeat left center;
+
+}
+.div-content span{
+	margin-top: 12px;
+	display: inline-block;
+}
+.div-content .p-blue{
+	color: #75B7EF;
+	font-size: 13px;
+	line-height: 25px;
+}
+.div-content .p-pub{
+	margin-top: 20px;
+	font-size: 12px;
+	line-height: 21px;
+}
+
+
+/*底部*/
+.footer-footer{
+	padding-top: 50px;
+	padding-bottom: 28px;
+	width: 100%;	
+	background: #439DE9;
+	text-align: center;
+	font-size: 14px;
+	line-height: 22px;
+	color: #fff;
+}
+
+
+
+
+
+/*媒体查询*/
+@media (min-width: 1200px){
+	.toper{
+		width: 1200px;		
+		margin: 0 auto;
+	}
+	.logo-font{
+		padding-left: 178px;
+	}
+	/*导航*/
+	.nav-nav .navbar-collapse{
+		margin-left: 200px;
+	} 
+	.produce{
+		margin: 0 auto;
+		position: relative;
+	}
+	
+
+	
+	
+}
+@media (max-width: 1200px) and (min-width:992px){
+	.logo-font{
+		text-align: center;
+	}
+	/*导航*/
+	.nav-nav .navbar-collapse{
+		margin-left: 200px;
+	} 
+	/*内容*/
+	.produce{
+		margin: 0 auto;
+		position: relative;
+	}
+	.content-all{		
+		padding-right:0px;
+		padding-left: 0px;		
+	}
+}
+@media (max-width: 992px) and (min-width: 768px){
+	.logo-font{
+		text-align: center;
+	}
+	/*导航*/
+	.nav-nav .navbar-nav>li>a{
+		padding-left: 40px;
+		padding-right: 40px;		
+	}
+	.nav-nav .navbar-collapse{
+		text-align: center;
+	} 
+	/*内容*/
+	.produce{
+		margin: 0 auto;
+		position: relative;
+	}
+	.content-all{		
+		padding-right:0px;
+		padding-left: 0px;		
+	}
+}
+@media (max-width:768px){
+	.top{
+		height: 150px;
+	}
+	.toper{
+		width: 100%;		
+	}
+	.logos{
+		width: 100%;
+		text-align: center;
+	}
+	.logo-font{
+		width: 100%;
+		font-size: 19px;
+		line-height: 38px;
+		color: #373737;
+		text-align: center;	
+	}
+
+	/*导航*/
+	
+	.nav-nav .navbar-collapse{
+	text-align: center;
+	}	
+	.nav-nav .navbar-default{
+	background: #f8f8f8;
+	}	
+	.nav-nav .navbar-nav>li>a:hover {
+     font-weight: bold;     
+	}
+	.nav-nav .navbar-nav>li>a{
+		color: #000;
+	}
+
+	/*内容*/
+	.produce{
+		margin: 0 auto;
+		position: relative;
+	}
+	.content-all{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.div-content img{
+		width: 100%;
+	}
+	.div-content .p-pub{
+		margin-top: 0px;
+	}
+
+}
+
+
+
