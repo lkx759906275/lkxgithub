@@ -5,7 +5,9 @@ body{
 	font-size:14px;
 	font-family:"微软雅黑", "Microsoft YaHei", "黑体", "simhei", "宋体", "simsun","[FZDHTJW -GB...";
 	background:#fff;
+    min-width:1240px;
 }
+
 img{
 	border:none;
 }
@@ -106,6 +108,7 @@ a{
 }
 .nav-list ul li img {
     vertical-align: middle;
+    margin-right: 10px;
 }
 
 									/*轮播图*/
