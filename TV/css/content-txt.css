@@ -1,0 +1,32 @@
+.dy-cont-r{
+	margin-left: 201px;	
+	background: #f7fcff;
+}
+.dy-cont-txt{
+	
+}
+.txt-h2{
+	font-size: 22px;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+}
+.h2-info{
+	height: 28px;
+    line-height: 28px;
+    border-top: 1px #def solid;
+    margin: 0px 30px;
+    text-align: center;
+}
+.h2-info span{
+	margin-left: 18px;
+}
+.txt-p p{
+	text-indent: 2em;
+	padding: 20px;
+	line-height: 25px;
+}
+.txt-p h3{
+	font-weight:normal;
+	margin-top: 26px;
+}
