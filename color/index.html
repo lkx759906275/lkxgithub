@@ -548,6 +548,26 @@
 			</div>
 		</div>
 
+		<!-- 最难的 -->
+		<div class="nav3">
+			<div class="nav2">
+				<div class="nav1">
+					<div class="bon">
+						<div class="banneron">
+							<span id="on1" class="bsh">实战<i></i></span>
+							<span id="on2">实效<i></i></span>
+							<span id="on3">实力<i></i></span>
+						</div>
+					</div>
+					<div class="banner">
+						<img src="images/57aadbdf87628.png"/>
+						<img src="images/57aadbf633a98.png"/>
+						<img src="images/57b3bc3593508.png"/>
+					<div>
+				</div>
+			</div>
+		</div>
+		</div>
 		<!-- 表单提交 -->
 		<div class="contact_us">
 		      <div class="wp clearfix">
@@ -575,7 +595,7 @@
 			<div class="link clearfix wp">
 				<ul class="clearfix">
 					<li>
-					 <dl>
+					 <dl>	
 					 	<dt><a href="#">关于我们</a></dt>
 					 	<dd><a href="#">公司简介</a></dd>
 					 	<dd><a href="#">企业网站</a></dd>
@@ -633,7 +653,11 @@
 				</ul>
 			</div>		
 		</div>
+		<div class="Copyright">Copyright © 2002-2011 0313IT.NET. 易互科技 版权所有</div>
 
+		
+		
+		
 
 	
 
@@ -663,6 +687,59 @@
 	     	 autoHeight: true //enable auto height
 	     });
    	 </script>
-   	 <script src="js/jquery-1.9.1.js"></script>
+
+   	 <script type="text/javascript">
+   	 $(function(){
+   	 	//	初始第几章banner
+   	 	var banner = 0;
+   	 	//	banner移动的距离
+   	 	var width = -1200;
+
+   	 	//	添加点击轮换事件
+   	 	// var tit = $(".banneron span");
+
+   	 	// for(var i = 0;i < tit.length;i++) {
+   	 	// 	tit[i].index = i;
+   	 	// 	$(tit[i]).click(function(){
+   	 	// 		alert(this.index);
+   	 	// 	})
+   	 	// }
+   	 	$("#on1").click(function(){lunbo(0)});
+   	 	$("#on2").click(function(){lunbo(1)});
+   	 	$("#on3").click(function(){lunbo(2)});
+   	 	$("#on4").click(function(){lunbo(3)});
+
+   	 	// 轮换
+   	 	function lunbo(i){
+   	 		banner = i;
+   	 		$("#on"+(++i)).addClass("bsh").siblings().removeClass("bsh");
+   	 	
+   	 		if(banner < 3){
+   	 			$(".banner").stop().animate({'left':banner*width+'px'},1000);
+   	 		}else{
+   	 			$(".banner").stop().animate({'left':'0px'},2000);
+   	 			$("#on1").addClass("bsh").siblings().removeClass("bsh");
+
+   	 			banner = 0;
+   	 		}
+   	 		banner++;
+   	 	};
+
+   	 	//	鼠标划上停止轮换划下继续轮换
+   	 	$(".banner").hover(function(){
+   	 		clearInterval(a);
+   	 	},function(){
+   	 		a =	setInterval(function(){
+   	 			lunbo(banner);
+   	 		},5000);
+   	 	});
+
+   	 	//	调用轮换
+   	 	var a =	setInterval(function(){
+   	 		lunbo(banner);
+   	 	},5000);
+   	 });
+   	 </script>
+   	 
 </body>
 </html>
