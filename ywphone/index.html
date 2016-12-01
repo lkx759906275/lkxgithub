@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>易物</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script>
+    var Dpr=1, uAgent=window.navigator.userAgent;
+        var isIOS=uAgent.match(/iphone/i),isYIXIN = uAgent.match(/yixin/i),is2345 = uAgent.match(/Mb2345/i),ishaosou = uAgent.match(/mso_app/i),isSogou = uAgent.match(/sogoumobilebrowser/ig),isLiebao = uAgent.match(/liebaofast/i),isGnbr = uAgent.match(/GNBR/i);
+        function resizeRoot(){
+            var wWidth = (screen.width > 0) ? (window.innerWidth >= screen.width || window.innerWidth == 0) ? screen.width : window.innerWidth : window.innerWidth, wDpr, wFsize;
+            var wHeight = (screen.height > 0) ? (window.innerHeight >= screen.height || window.innerHeight == 0) ? screen.height : window.innerHeight : window.innerHeight;
+            if (window.devicePixelRatio) {
+                wDpr = window.devicePixelRatio;
+            } else {
+                wDpr = isIOS ? wWidth > 818 ? 3 : wWidth > 480 ? 2 : 1 : 1;
+            }
+            if(isIOS) {
+                wWidth = screen.width;
+                wHeight = screen.height;
+            }
+            if(wWidth > wHeight){
+                wWidth = wHeight;
+            }
+            wFsize = wWidth > 1080 ? 144 : wWidth / 7.5;
+            wFsize = wFsize > 32 ? wFsize : 32;
+            window.screenWidth_ = wWidth;
+            if(isYIXIN || is2345 || ishaosou || isSogou || isLiebao || isGnbr){
+                setTimeout(function(){
+                    wWidth = (screen.width > 0) ? (window.innerWidth >= screen.width || window.innerWidth == 0) ? screen.width : window.innerWidth : window.innerWidth;
+                    wHeight = (screen.height > 0) ? (window.innerHeight >= screen.height || window.innerHeight == 0) ? screen.height : window.innerHeight : window.innerHeight;
+                    wFsize = wWidth > 1080 ? 144 : wWidth / 7.5;
+                    wFsize = wFsize > 32 ? wFsize : 32;
+                    document.getElementsByTagName('html')[0].style.fontSize = wFsize + 'px';
+                },500);
+            }else{
+                document.getElementsByTagName('html')[0].style.fontSize = wFsize + 'px';
+            }
+        }
+        resizeRoot();
+  </script>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner.png"></div>
+            <div class="swiper-slide"><img src="images/banner.png"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="search">
+        <img src="images/search.png" class="s_ico"><input type="text" placeholder="请输入关键字进行搜索" id="txt">
+    </div> 
+    <nav class="nav">
+      <ul class="clearfix">
+        <a><li><img src="images/tj1.png"><span>热门推荐</span></li></a>
+        <a><li><img src="images/tj2.png"><span>最新产品</span></li></a>
+        <a><li><img src="images/tj3.png"><span>优化商家</span></li></a>
+        <a><li><img src="images/tj4.png"><span>会员中心</span></li></a>
+      </ul>
+    </nav>
+    <div class="hotspot">
+       <strong class="hot">热</strong>
+       <em class="pot">点</em>
+       <img src="images/horn.png">
+       <span>商城未上线,请勿下单付款！</span>
+    </div>
+    <div class="commodity footer_padding">
+       <ul class="clearfix">
+         <li>
+           <a href="##">
+             <img src="images/commodity.png">
+             <strong>商品名称商品名称(商品名称)</strong>
+             <p class="money">￥2780.00</p>
+           </a>
+           <a href="#" class="add"><img src="images/add.png"></a>
+         </li>
+         <li>
+           <a href="##">
+             <img src="images/commodity.png">
+             <strong>商品名称商品名称(商品名称)</strong>
+             <p class="money">￥2780.00</p>
+           </a>
+           <a href="#" class="add"><img src="images/add.png"></a>
+         </li>
+          <li>
+           <a href="##">
+             <img src="images/commodity.png">
+             <strong>商品名称商品名称(商品名称)</strong>
+             <p class="money">￥2780.00</p>
+           </a>
+           <a href="#" class="add"><img src="images/add.png"></a>
+         </li>
+         <li>
+           <a href="##">
+             <img src="images/commodity.png">
+             <strong>商品名称商品名称(商品名称)</strong>
+             <p class="money">￥2780.00</p>
+           </a>
+           <a href="#" class="add"><img src="images/add.png"></a>
+         </li>
+          <li>
+           <a href="##">
+             <img src="images/commodity.png">
+             <strong>商品名称商品名称(商品名称)</strong>
+             <p class="money">￥2780.00</p>
+           </a>
+           <a href="#" class="add"><img src="images/add.png"></a>
+         </li>
+         <li>
+           <a href="##">
+             <img src="images/commodity.png">
+             <strong>商品名称商品名称(商品名称)</strong>
+             <p class="money">￥2780.00</p>
+           </a>
+           <a href="#" class="add"><img src="images/add.png"></a>
+         </li>
+            <li>
+           <a href="##">
+             <img src="images/commodity.png">
+             <strong>商品名称商品名称(商品名称)</strong>
+             <p class="money">￥2780.00</p>
+           </a>
+           <a href="#" class="add"><img src="images/add.png"></a>
+         </li>
+         <li>
+           <a href="##">
+             <img src="images/commodity.png">
+             <strong>商品名称商品名称(商品名称)</strong>
+             <p class="money">￥2780.00</p>
+           </a>
+           <a href="#" class="add"><img src="images/add.png"></a>
+         </li>
+       </ul>
+    </div>
+    <footer class="footer">
+      <ul class="footer_ul clearfix">
+        <li>
+          <a href="">
+            <img src="images/index.png">
+            <p>首页</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="images/alllist.png">
+            <p>全部分类</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="images/authentication.png">
+            <p>认证商家</p>
+          </a>
+        </li>
+        <li>
+          <a href="release.html">
+            <img src="images/shopping-cart.png">
+            <p>购物车</p>
+          </a>
+        </li>
+        <li>
+          <a href="vip.html">
+            <img src="images/vip.png">
+            <p>会员中心</p>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/swiper-3.4.0.jquery.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+          pagination: '.swiper-pagination',
+          paginationClickable: true
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+	<script>
+  		//适合em,rem(注：em相对于自身父级的字体大小，rem是相对根元素的字体)
+  		//10*(s_width/375) 375是按照750的设计图来做的，设计图尺寸变化修改这的值即可  
+	    //页面布局高度/宽度/字体大小rem算法：(设计图的宽度或高度)/2/10 = ()rem  
+	    function initScale(){
+	   	 	var s_width = window.innerWidth;
+	    	var s_height = window.innerHeight;
+	    	document.querySelector('html').style.fontSize = 10*(s_width/375) + 'px';
+	    }
+	    initScale();
+   </script>
+
+
+
+
+<script>
+var Dpr=1, uAgent=window.navigator.userAgent;
+        var isIOS=uAgent.match(/iphone/i),isYIXIN = uAgent.match(/yixin/i),is2345 = uAgent.match(/Mb2345/i),ishaosou = uAgent.match(/mso_app/i),isSogou = uAgent.match(/sogoumobilebrowser/ig),isLiebao = uAgent.match(/liebaofast/i),isGnbr = uAgent.match(/GNBR/i);
+        function resizeRoot(){
+            var wWidth = (screen.width > 0) ? (window.innerWidth >= screen.width || window.innerWidth == 0) ? screen.width : window.innerWidth : window.innerWidth, wDpr, wFsize;
+            var wHeight = (screen.height > 0) ? (window.innerHeight >= screen.height || window.innerHeight == 0) ? screen.height : window.innerHeight : window.innerHeight;
+            if (window.devicePixelRatio) {
+                wDpr = window.devicePixelRatio;
+            } else {
+                wDpr = isIOS ? wWidth > 818 ? 3 : wWidth > 480 ? 2 : 1 : 1;
+            }
+            if(isIOS) {
+                wWidth = screen.width;
+                wHeight = screen.height;
+            }
+            if(wWidth > wHeight){
+                wWidth = wHeight;
+            }
+            wFsize = wWidth > 1080 ? 144 : wWidth / 7.5;
+            wFsize = wFsize > 32 ? wFsize : 32;
+            window.screenWidth_ = wWidth;
+            if(isYIXIN || is2345 || ishaosou || isSogou || isLiebao || isGnbr){
+                setTimeout(function(){
+                    wWidth = (screen.width > 0) ? (window.innerWidth >= screen.width || window.innerWidth == 0) ? screen.width : window.innerWidth : window.innerWidth;
+                    wHeight = (screen.height > 0) ? (window.innerHeight >= screen.height || window.innerHeight == 0) ? screen.height : window.innerHeight : window.innerHeight;
+                    wFsize = wWidth > 1080 ? 144 : wWidth / 7.5;
+                    wFsize = wFsize > 32 ? wFsize : 32;
+                    document.getElementsByTagName('html')[0].style.fontSize = wFsize + 'px';
+                },500);
+            }else{
+                document.getElementsByTagName('html')[0].style.fontSize = wFsize + 'px';
+            }
+        }
+        resizeRoot();
+</script>
+<body>
+	<div class="div-top">
+		<h2>会员中心<span><a href="#"><img src="images/sit.png" alt="设置"></a></span></h2>
+		<dl class="clearfix">
+			<dt>
+			<img src="images/143Y5Q9254240-11513_lit.png" alt="头像">
+			</dt>
+			<dd>
+				<p class="v-p"><span>用户名</span><span><img src="images/v-vip.png" alt=""></span></p>
+				<p>VIP会员</p>
+			</dd>
+		</dl>
+		<div class="vip-nav">
+			<div class="nav1">
+				<a href="#">
+					<img src="images/nav-x.png" alt="收藏">
+					<p>收藏</p>
+				</a>
+			</div>
+			<div class="nav2">
+			<a href="#">
+				<img src="images/nav-2.png" alt="浏览记录">
+				<p>浏览记录</p>
+			</a>			
+			</div>
+			<div class="nav3">
+			<a href="#">
+				<img src="images/nav-3.png" alt="我的地址">
+				<p>我的地址</p>
+			</a>
+			</div>
+		</div>
+	</div>
+	<!-- 我是消费者 -->
+	<div class="consumer">
+		<div class="consumer-top">
+			<span>我是消费者</span>
+			<span class="span2">
+				<a href="#">查看全部订单</a>
+			</span>
+		</div>
+		<div class="bottom-con">
+			<div class="bc bc1">
+			<a href="#">
+				<img src="images/ywdd.png" alt="易物订单">
+				<p>易物订单</p>
+			</a>
+			</div>
+			<div class="bc bc2">
+			<a href="#">
+				<img src="images/yhok.png" alt="已完成">
+				<p>已完成</p>
+			</a>
+			</div>						
+		</div>
+	</div>
+	<!-- 我是易物者 -->
+	<div class="ywz footer_padding">
+		<div class="consumer-top">
+			<span>我是易物者</span>			
+		</div>
+		<div class="bottom-con">
+				<div class="bc bc1">
+				<a href="#">
+					<img src="images/okdd1.png" alt="已售订单">
+					<p>已售订单</p>
+				</a>
+				</div>
+				<div class="bc bc2">
+				<a href="#">
+					<img src="images/fbsb.png" alt="发布商品">
+					<p>发布商品</p>
+				</a>
+				</div>
+				<div class="bc bc3">
+				<a href="#">
+					<img src="images/glsp.png" alt="管理商品">
+					<p>管理商品</p>
+				</a>
+				</div>	
+				<div class="bc bc4">
+				<a href="#">
+					<img src="images/ywsz.png" alt="易物守则">
+					<p>易物守则</p>
+				</a>
+				</div>
+				<div class="bc bc5">
+				<a href="#">
+					<img src="images/bzj.png" alt="保证金">
+					<p>保证金</p>
+				</a>
+				</div>		
+		</div>
+	</div>
+	    <footer class="footer">
+      <ul class="footer_ul clearfix">
+        <li>
+          <a href="index.html">
+            <img src="images/index.png">
+            <p>首页</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="images/alllist.png">
+            <p>全部分类</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="images/authentication.png">
+            <p>认证商家</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="images/shopping-cart.png">
+            <p>购物车</p>
+          </a>
+        </li>
+        <li>
+          <a href="##">
+            <img src="images/vip.png">
+            <p>会员中心</p>
+          </a>
+        </li>
+      </ul>
+    </footer>
+</body>
+</html>
