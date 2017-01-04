@@ -1,0 +1,12 @@
+contanier，container-fluid 里面有个属性是padding-left：15px,padding-right:15px  
+如果想要 去掉这个，那么就要在里面套一个row ，因为row  里面的属性 margin-left:-15px; margin-right:-15px ;   就可以和这个抵消了  哈哈
+
+
+通过为“列（column）”设置 padding 属性，从而创建列与列之间的间隔（gutter）。通过为 .row 元素设置负值 margin 从而抵消掉为 .container 元素设置的 padding，也就间接为“行（row）”所包含的“列（column）”抵消掉了padding。
+
+
+你敢信？  col-lg/md/sm/xs-(1-12) 有个s属性:
+position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
