@@ -7,7 +7,7 @@
          spaceBetween: 30,
          loop: true,
          centeredSlides: true,
-         autoplay: 2500,
+         autoplay: 5500,
          autoplayDisableOnInteraction: false,
          autoHeight: true //enable auto height
      });

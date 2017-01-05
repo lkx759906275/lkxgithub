@@ -34,6 +34,24 @@ a:hover{
       .swiper-container .swiper-pagination-bullet-active {
    	    background: red;
    	}
+      .p1{
+        font-size: 58px;
+        line-height: 56px;
+        height: 56px;
+        margin-bottom: 10px;
+        color: #fff;
+        margin-top: 5px;
+    }
+    .p2{
+        font-size: 50px;
+        text-transform: uppercase;
+        padding-top: 0;
+        color: #e4392a; 
+    }
+   .p3{
+        font-size: 50px;
+        color: #e4392a;
+   }
 
    .img-ts{
 	margin-top: 40px;
@@ -43,6 +61,13 @@ a:hover{
     /* .pr-li li{
         
     }*/
+    .wp-1250{
+    width: 1300px;
+    margin: 0 auto;
+    }
+     .ab-img-w100 img{
+    width: 100%;
+    } 
     .dropdown-menu>li>a {       
         padding:3px;       
     }
@@ -52,19 +77,9 @@ a:hover{
 	.tab-ul li:last-child{
 		border-radius: 0 6px 6px 0;
 	}
-	/*news部分*/
-	.news ul li{
-		float: left;
-		width: 50%;
-		margin-top:20px;
-		text-align: center;
-	}
-	.news ul li a{
-		padding: 10px ;
-	}
-	.new-date{
-		margin-left: 50px;
-	}
+    /*工程案例*/
+    
+
 	/*底部*/
 	.footer-nav{
 		text-align:center;
@@ -76,12 +91,26 @@ a:hover{
 	.wp-1200{
    		width:100%;
    }  
+   .p1{    
+     font-size:18px;
+    }
+    .p2{
+     font-size:14px;
+     color: #e4392a;
+    }
+     .ab-img-w100 img{
+    width: 50%;
+    } 
+ 
    /*主页产品展示部分*/
    .pr-li li{
     width:48%;
     margin-left:1%;
    }
-  
+    .about-c1 img{
+        width: 100%;
+    }
+    /*工程案例*/
  
 	/*内容4 news 部分*/
 
@@ -100,25 +129,31 @@ a:hover{
     .product-content img{
         width: 100%;
     }
-   
+    .fly{
+    text-align: center;
+    }
+
+    
 } 
 /*----------------------------------------*/
 /*公用样式*/
-    .hr img{
+
+    h4{
+        font-size: 29px;
+    }
+    .m-top{
         margin-top: 20px;
-        width: 100%;
     }
-    .bg-hr img{
-        width: 100%;
-    }
+    .hr img{
+        margin-top: 20px;        
+    }  
    
 	/*清除与banner图下面的空间*/
 	.navbar{
 		margin-bottom: 0;
 	}
     .navbar-default .navbar-nav>li>a{
-        color: #000;
-        font-size: 24px;
+        color: #000;    
     }
 	.navbar-default .navbar-nav>li>a:hover {
 	    color: red;
@@ -133,46 +168,28 @@ a:hover{
     .swiper-container .swiper-slide img{
         width: 100%;
     }   
-
-    /*#fontzjk{
-    	font-size: 32px;
-    	color: red;
-    	position: absolute;
-    	lef`t: 50%;
-    	top:50%;
-    	transform: translate(-50%,-50%);
-    	animation: around;
-    	animation-duration: 10s;
-    	animation-timing-function: ease;
-    	animation-delay: 1s;
-    	animation-iteration-count:infinite;
+    .p-top{
+        position: relative;
     }
-    @keyframes around{
-      0% {
-        transform: translateX(0);
-      }
-      25%{
-        transform: translateX(180px);
-      }
-      50%{
-         transform: translate(180px, 180px); 
-      }
-      75%{
-        transform:translate(0,180px);
-      }
-      100%{
-        transform: translateY(0);
-      }
-    }*/
-
+    .p-txt{
+      position:absolute;
+      top:50%;
+      left:50%;        
+      -webkit-transform:translate(-50%,-50%);
+      -moz-transform:translate(-50%,-50%);
+      transform:translate(-50%,-50%);
+    }
+  
 /*内容1   */
+
 .c1{	
 	padding-bottom: 20px;
 }
-.ab-img-w100 img{
-	width: 100%;
-}
+   
+ 
 .about-h2{
+    color: red;
+    font-weight: bold;
 	line-height: 60px;
 	border-bottom: 1px solid #ccc;
 }
@@ -184,16 +201,37 @@ a:hover{
 
 /*内容3*/
 .c3-h2{	
-
-	color: rgb(138,0,0);
+    color: red;
+    font-weight: bold;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #ccc;	
 }
-
+/*新品上市*/
+.new-pro h2{
+    padding-bottom: 10px;
+    border-bottom:1px solid #ccc;
+}
 /*产品*/
+.fz-18{
+    font-size: 18px;
+    font-weight: bold;
+}
+.fz-10{
+   font-size: 10px; 
+}
+ .btn{
+    padding: 29px 12px;
+}
 
+
+
+.new-pro-ul img{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
 .m-b20{
 	margin-bottom: 20px;
 }
@@ -224,8 +262,104 @@ a:hover{
  	color: #fff;
  }
 .pr-li img{
+    padding: 10px;
+    border: 1px solid #ccc;
     width: 100%;
 }
+
+/*工程案例*/
+.eg-show{
+    overflow: hidden;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #ececec;
+}
+ .menu {
+    width: 100%;
+    padding-bottom: 7px;
+    margin-bottom: 30px;
+}
+ .menu li {
+        /*float: left;*/
+        display: inline-block;
+        width: 199px;
+        height: 57px;
+        position: relative;
+        margin-right: 1px;
+        background-color: #fff;
+        font-size: 16px;
+        line-height: 57px;
+    }
+
+ .menu li a {
+    color: #333333;
+}
+
+ .menu b {
+    display: block;
+    float: left;
+    margin-left: 28px;
+    width: 31px;
+    height: 28px;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+ .menu .b01 {
+    background: url(../images/case_icon01.png) no-repeat center top;
+}
+
+ .menu .b02 {
+    background: url(../images/case_icon02.png) no-repeat center top;
+}
+
+ .menu .b03 {
+    background: url(../images/case_icon03.png) no-repeat center top;
+}
+
+ .menu .b04 {
+    background: url(../images/case_icon04.png) no-repeat center top;
+}
+
+ .menu .b05 {
+    background: url(../images/case_icon05.png) no-repeat center top;
+}
+
+ .menu li em {
+    display: none;
+    width: 22px;
+    height: 7px;
+    background: url(../images/case_s.png) no-repeat center;
+    position: absolute;
+    left: 88px;
+    bottom: -7px;
+}
+
+ .menu li.on {
+    background-color: #d80007;
+}
+
+ .menu li.on a {
+    font-weight: bold;
+    color: #fff;
+}
+
+ .menu li.on em {
+    display: block;
+}
+
+ .menu li.on b {
+    background-position: bottom;
+}
+.menu-div img{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.menu-div ul li{
+    margin:5px;
+}
+
 
 
 /*内容4  news*/
@@ -236,28 +370,54 @@ a:hover{
 .news ul li{
 	margin-bottom: 20px;
 }
-.news ul li a{
-	color: #000;
-}
 .news ul li a:hover{
-	color: red;
+	color: #fff;
 }
-.new-date{
-	color:#999;	
+.new-li-img img{
+    width: 100%;
+    height: 150px;
 }
-
+.new-li-txt  h4{
+    font-size:16px;
+    color:#494949;
+    font-weight: bold;
+}
+.date{
+    font-size: 13px;
+    color: #BFBFBF;
+    height: 25px;
+    line-height: 25px;
+}
+.more{   
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;    
+    border-radius:15px;
+    background:rgb(241,241,241);
+}
+.more:hover{
+    background: rgb(245,131,33);
+}
+.more a{
+    color: #878787;
+}
+.sketch{
+    font-size: 13px;
+    color: #878787;
+    text-indent: 2em;
+}
 
 /*底部*/
 .footer{
 	margin-top: 20px;
-	background: #333;
-	color: #b4b4b4;
-	padding-bottom: 20px;
+	background: rgb(25,25,56);
+	color: #fff;
 	font-size: 20px;
 }
 .footer-nav {
 	margin-top: 20px;
-	padding-top: 20px;   
+	padding-top: 20px;     
     border-top: 1px solid #3d3f41;
 }
 .footer-nav ul li a:hover{
@@ -269,7 +429,10 @@ a:hover{
 .linkme a:hover{
 	color: red;
 }
-/*关于我们*/
+.copy{
+    font-size: 14px; 
+}
+/*------------------------关于我们----栏目2------------*/
 .position{
 	margin-top: 10px;
 	color: #999;
@@ -290,41 +453,8 @@ a:hover{
 	margin-bottom: 4px;
 	border: 1px solid #ccc;
 }
-.ccc{	
-	padding: 0 26px;
-	background: #c1c1c1;
-	text-align: center;
-	line-height: 114px;
-	font-size: 14px;
-	color: #fff;
-}
-.ccc  img{
-	margin-right: 5px; 
-}
-.ccc-txt ul li{	
-    margin: 2px 0;
-}
-.ccc-txt .list-inline{
-	margin-left: 0;
-}
-.ccc-txt ul{
-	background: #fff;
-	text-align: center;	
-}
-.ccc-txt ul li a{
-	font-size: 18px;
-	display: inline-block;	
-	padding: 2px 18px;
-}
-.ccc-txt ul li a:hover{
-	color: #fff;
-	background: #ef3332;
-    transition: all 0.3s;
-    border-radius: 120px;
-}
-.fly{
-	text-align: center;
-}
+
+
 .fly li {    
 	padding: 0;   
     margin: 0 10px 20px 10px;
@@ -338,7 +468,7 @@ a:hover{
 }
 .txt-img{
 	width:100%;
-    height: 240px;
+   /* height: 240px;*/
     overflow: hidden;
     margin-bottom: 10px;
 }
@@ -361,7 +491,7 @@ a:hover{
 	border: 1px solid #ccc;
 	box-shadow: 0 0 4px #888;
 }
-/*翻译*/
+/*翻页*/
 .ep-pages {    
     font-size: 14px;  
     margin-bottom: 20px;
@@ -424,7 +554,7 @@ a:hover{
     vertical-align: top
 }
 
-/*新闻中心*/
+/*---------------新闻中心---栏目3-------------------*/
 .new-content-list{
 	padding-bottom: 50px;		
 	background: rgb(246,246,246);
@@ -495,15 +625,13 @@ a:hover{
 	-ms-transition:all 0.2s;
 }
 
-/*联系我们*/
+/*-------------------联系我们----------------------*/
 .connect {
     background: url("../images/cn01.jpg") no-repeat top;    
 }
-
 .connect_column {
     margin-top: 40px;
 }
-
 .connect_column li {
     float: left;
     text-align: center;   
@@ -514,11 +642,9 @@ a:hover{
     color: #333;
     line-height: 32px;
 }
-
 .connect_column li:first-child {
     margin-left: 0;
 }
-
 .connect_column h2 {
     font-size: 18px;
     color: #333;
@@ -526,16 +652,13 @@ a:hover{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 .connect_column .info {
     position: relative;
     z-index: 2;
 }
-
 .connect_column .text {
     margin: 0 20px;
 }
-
 .connect_column .s1 {
     position: absolute;
     top: 0;
@@ -546,7 +669,6 @@ a:hover{
     opacity: 0.2;
     filter: alpha(opacity=20);
 }
-
 .connect_column .s2 {
     position: absolute;
     top: 0;
@@ -557,7 +679,6 @@ a:hover{
     opacity: 0.2;
     filter: alpha(opacity=20);
 }
-
 .connect_column .s3 {
     position: absolute;
     top: 0;
@@ -568,7 +689,6 @@ a:hover{
     opacity: 0.2;
     filter: alpha(opacity=20);
 }
-
 .connect_column .s4 {
     position: absolute;
     top: 0;
@@ -579,39 +699,33 @@ a:hover{
     opacity: 0.2;
     filter: alpha(opacity=20);
 }
-
 .connect_column .i1 {
     display: inline-block;
     width: 36px;
     height: 46px;
     background: url("../images/sprite2.png") no-repeat 0 0;
 }
-
 .connect_column .i2 {
     display: inline-block;
     width: 42px;
     height: 46px;
     background: url("../images/sprite2.png") no-repeat -38px 0;
 }
-
 .connect_column .i3 {
     display: inline-block;
     width: 40px;
     height: 46px;
     background: url("../images/sprite2.png") no-repeat -83px 0;
 }
-
 .connect_column .i4 {
     display: inline-block;
     width: 40px;
     height: 46px;
     background: url("../images/sprite2.png") no-repeat -125px 0;
 }
-
 .connect_column a {
     color: #333;
 }
-
 .connect_share {
     border-top: 2px solid #43bcc7;
     width: 120px;
@@ -619,7 +733,6 @@ a:hover{
     text-align: center;
     padding-top: 46px;
 }
-
 .connect_share .sh1 {
     display: inline-block;
     width: 40px;
@@ -627,14 +740,12 @@ a:hover{
     background: url("../images/sprite2.png") 0 -48px;
     margin-right: 9px;
 }
-
 .connect_share .sh2 {
     display: inline-block;
     width: 40px;
     height: 40px;
     background: url("../images/sprite2.png") -41px -48px;
 }
-
 .iw_poi_title {
     color: #CC5522;
     font-size: 14px;
@@ -643,7 +754,6 @@ a:hover{
     padding-right: 13px;
     white-space: nowrap
 }
-
 .iw_poi_content {
     font: 12px arial, sans-serif;
     overflow: visible;
@@ -651,7 +761,6 @@ a:hover{
     white-space: -moz-pre-wrap;
     word-wrap: break-word
 }
-
 /*产品内页*/
 .page-img img{   
     width: 100%;   
@@ -663,19 +772,50 @@ a:hover{
     box-shadow: 0 0 6px #888;
   
 }
-.xqem{
-    text-indent: 2em;
-    background: url("../images/xqem.png")no-repeat left center;
-}
-.xg-pro{   
-    color: blue;
-    text-indent: 2em;
-    background: url("../images/produtbg.png")no-repeat left center;
-}
-.newsbg{ 
+.pul-hr{
+    background: url("../images/hr.gif");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 35px;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 900;
     color: red;
-    text-indent: 2em;
-    background: url("../images/newsbg.png")no-repeat left center;
+}
+
+.additioncolumntitle h2{
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0;
+    padding-top: 5px;
+    margin:0;   
+}
+.additioncolumntitle {
+    text-align: left;
+    background: url("../images/RED051816.jpg");
+    font-weight: 900;
+    height: 32px;
+    line-height: 32px;
+    color: #ffffff;
+}
+.aicon {
+    display:inline-block;
+    width: 25px;
+    height: 14px;
+    background: url("../images/RED051811.jpg")no-repeat center;
+}
+.new-li-bg{
+    padding: 10px;
+    background: #f0f0f0;
+}
+.icon1 {
+    display: inline-block;
+    width: 12px;
+    height: 7px;
+    background: url("../images/RED051815.gif");
+    background-repeat: no-repeat;
 }
 .pro-contxt{
     font-size: 24px;
@@ -693,7 +833,28 @@ a:hover{
 .h2-score{
     background:rgb(245,245,245);
 }
-.t-b{
-    margin-top: 50px;  
+.next-pro{
+    margin-top: 5px;
+}
+.next-pro a{ 
+    color: #000;
+}
+.next-pro a:hover{
+    color: blue;
+}
+.next-imgbg{
+    margin-right: 15px;
+    text-indent: 2em;
+    background: url("../images/next.png")no-repeat left center;
+}
+.prev-imgbg{
+    padding-right:2em;
+    background: url("../images/prev.png")no-repeat right center;
 }
 
+/*新闻内页*/
+.return{
+    height: 26px;
+    padding-left: 30px;
+    background: url(../images/return-icon.png)no-repeat left center;
+}
