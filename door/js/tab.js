@@ -21,6 +21,7 @@
 				// 获取所有页签和所有要切换的内容
 				var title=$('ciltop').getElementsByTagName('li');
 				var divs=$('content').getElementsByTagName('div');
+				
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 				// 鼠标 放上去/离开 的时候 停止/开始切换
 

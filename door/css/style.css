@@ -77,6 +77,9 @@ a:hover{
 	.tab-ul li:last-child{
 		border-radius: 0 6px 6px 0;
 	}
+    .tab-ul a{
+        color: #000;
+    }
     /*工程案例*/
     
 
@@ -91,6 +94,9 @@ a:hover{
 	.wp-1200{
    		width:100%;
    }  
+    .logo img{
+      height: 50px;
+    }
    .p1{    
      font-size:18px;
     }
@@ -141,6 +147,7 @@ a:hover{
     h4{
         font-size: 29px;
     }
+
     .m-top{
         margin-top: 20px;
     }
@@ -192,6 +199,9 @@ a:hover{
     font-weight: bold;
 	line-height: 60px;
 	border-bottom: 1px solid #ccc;
+}
+.ab-img1 p{
+    text-indent: 2em;
 }
 .ab-img1,.ab-img2,.ab-img3,.ab-img4{
 	overflow: hidden;	
@@ -362,7 +372,7 @@ a:hover{
 
 
 
-/*内容4  news*/
+/*内容5  news*/
 .news{
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -857,4 +867,25 @@ a:hover{
     height: 26px;
     padding-left: 30px;
     background: url(../images/return-icon.png)no-repeat left center;
+}
+/*自定义按钮*/
+.btn-pink{
+    background-image: -webkit-radial-gradient(bottom left,circle,#f857bd,#fc7672,#ff8847);
+background-color: #fc7672;
+}
+.btn-blue{
+    background-image: -webkit-radial-gradient(bottom left,circle,#4a6ef5,#3f8df8,#33b1fb);
+    background-color: #3f8df8;
+}
+.btn-green{
+    background-image: -webkit-radial-gradient(bottom left,circle,#35c62e,#7cd945,#aee656);
+    background-color: #7cd945;
+}
+.btn-bgren{
+    background-image: -webkit-radial-gradient(bottom left,circle,#9e91fa,#9094f7,#7499f2);
+    background-color: #9094f7;
+}
+.btn-yellow{
+    background-image: -webkit-radial-gradient(bottom left,circle,#fdb41f,#f6c61c,#edde18);
+    background-color: #f6c61c;
 }
