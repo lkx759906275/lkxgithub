@@ -2,6 +2,9 @@
 a:hover{
 	text-decoration: none;
 }
+body{
+   font-family: "Microsoft YaHei";
+}
 
 /*PC端口*/
 @media (min-width:1200px) {
@@ -9,17 +12,21 @@ a:hover{
   	width:1200px;
   	margin: 0 auto;  	
   }
+  
+  .navbar-nav{
+        float: right;
+    }
   .navbar-default{
 	background:#fff;
 	border-color: #fff;
 	}
   .logo{
-  	margin-right: 130px;
+  	margin-left: 139px;
   } 	
   .navbar-nav>li>a {
-		font-size: 24px;
-	    padding-top: 22px;
-	    padding-bottom: 15px;
+		font-size: 18px;
+        line-height: 4.71em;
+        color: #333;	   
    }
    .wp-1200{
    	width: 1200px;
@@ -57,10 +64,7 @@ a:hover{
 	margin-top: 40px;
 	}
 
-	/*产品部分*/
-    /* .pr-li li{
-        
-    }*/
+	
     .wp-1250{
     width: 1300px;
     margin: 0 auto;
@@ -77,9 +81,7 @@ a:hover{
 	.tab-ul li:last-child{
 		border-radius: 0 6px 6px 0;
 	}
-    .tab-ul a{
-        color: #000;
-    }
+    
     /*工程案例*/
     
 
@@ -110,8 +112,13 @@ a:hover{
  
    /*主页产品展示部分*/
    .pr-li li{
+    float: left;
     width:48%;
     margin-left:1%;
+   }
+
+   .pr-li img{
+    width: 100%;
    }
     .about-c1 img{
         width: 100%;
@@ -138,7 +145,15 @@ a:hover{
     .fly{
     text-align: center;
     }
-
+    .navbar-header{
+        position: relative;
+    }
+    .navbar-brand{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+    }
     
 } 
 /*----------------------------------------*/
@@ -149,7 +164,7 @@ a:hover{
     }
 
     .m-top{
-        margin-top: 20px;
+        margin-top: 60px;
     }
     .hr img{
         margin-top: 20px;        
@@ -159,14 +174,24 @@ a:hover{
 	.navbar{
 		margin-bottom: 0;
 	}
+    
+    .dropdown .open:hover{
+      background-color: rgb(0, 124, 195);
+    }
     .navbar-default .navbar-nav>li>a{
-        color: #000;    
+        color: #333;    
+        transition: all 0.5s;
+        padding: 8px 22px;
+        display: block;
+        text-align: center;
     }
 	.navbar-default .navbar-nav>li>a:hover {
-	    color: red;
-	    background-color: transparent;
+	    color: #fff;
+	    background-color: rgb(0, 124, 195);
 	}
-
+    .navbar-header{
+        vertical-align: center;
+    }
     /*轮播图*/
 	.swiper-container {
         width: 100%;
@@ -194,11 +219,12 @@ a:hover{
 }
    
  
-.about-h2{
-    color: red;
-    font-weight: bold;
-	line-height: 60px;
-	border-bottom: 1px solid #ccc;
+.about-h2{   
+    font-size: 30px;
+    line-height: 75px;
+    text-align: center;
+    color: #000;
+    border-bottom: 1px solid #ccc;
 }
 .ab-img1 p{
     text-indent: 2em;
@@ -208,15 +234,25 @@ a:hover{
 	padding-right: 10px;
 	padding-left: 10px;	
 }
-
+.porbg{ 
+    padding-left: 58px;
+    background: url("../images/probg.png") no-repeat left center;
+}
 /*内容3*/
 .c3-h2{	
-    color: red;
-    font-weight: bold;
+    color: #000;   
 	margin-top: 40px;
 	margin-bottom: 40px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #ccc;	
+	border-bottom: 1px solid #ccc;	  
+}
+.c4-h2{ 
+    color:#d80007;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;    
 }
 /*新品上市*/
 .new-pro h2{
@@ -236,7 +272,9 @@ a:hover{
 }
 
 
-
+.new-pro-ul li a:hover{
+   color: red;   
+}
 .new-pro-ul img{
     width: 100%;
     border: 1px solid #ccc;
@@ -246,8 +284,10 @@ a:hover{
 	margin-bottom: 20px;
 }
 .tab-ul{
-	text-align: center;
 	font-size: 0;
+}
+.tab-ul a{
+   color: #000;
 }
 
 .tab-ul li{		
@@ -274,7 +314,7 @@ a:hover{
 .pr-li img{
     padding: 10px;
     border: 1px solid #ccc;
-    width: 100%;
+   
 }
 
 /*工程案例*/
@@ -782,19 +822,11 @@ a:hover{
     box-shadow: 0 0 6px #888;
   
 }
-.pul-hr{
-    background: url("../images/hr.gif");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    height: 35px;
-    font-size: 15px;
-    line-height: 26px;
-    text-align: left;
-    padding-left: 10px;
-    font-weight: 900;
-    color: red;
+.pro-h2{
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
-
 .additioncolumntitle h2{
     font-size: 24px;
     line-height: 24px;
@@ -844,7 +876,7 @@ a:hover{
     background:rgb(245,245,245);
 }
 .next-pro{
-    margin-top: 5px;
+    margin-top: 25px;
 }
 .next-pro a{ 
     color: #000;

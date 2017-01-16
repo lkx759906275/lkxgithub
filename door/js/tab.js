@@ -73,6 +73,7 @@
 					title[curIndex].className="select";
 					divs[curIndex].style.display="block";
 					index=curIndex;
+
 			}				
 	
 		
