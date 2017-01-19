@@ -117,7 +117,9 @@ body{
     width:48%;
     margin-left:1%;
    }
-
+    .tab-ul li{
+        width: 48%;
+   }
    .pr-li img{
     width: 100%;
    }
