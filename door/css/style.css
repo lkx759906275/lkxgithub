@@ -8,7 +8,6 @@ body{
 
 /*PC端口*/
 @media (min-width:1200px) {
-  .nav-c-bg
   .wp{
   	width:1200px;
   	margin: 0 auto;  	
@@ -64,6 +63,8 @@ body{
    .img-ts{
 	margin-top: 40px;
 	}
+
+	
     .wp-1250{
     width: 1300px;
     margin: 0 auto;
@@ -88,10 +89,7 @@ body{
 	.footer-nav{
 		text-align:center;
 	}
-    /*产品内页*/
-    .page-img img{
-     width: 500px;
-    }
+    /*内部产品*/   
 }
 
 /*手机端口*/
@@ -142,7 +140,8 @@ body{
         width: 100%;
     } 
     /*产品内页主要内容部分*/
-    .page-img img{
+
+    .product-content img{
         width: 100%;
     }
     .fly{
@@ -815,7 +814,7 @@ body{
     word-wrap: break-word
 }
 /*产品内页*/
-.page-img img{
+.page-img img{      
     border: 1px solid #fff; 
     cursor: pointer;
 }
@@ -861,22 +860,19 @@ body{
     background: url("../images/RED051815.gif");
     background-repeat: no-repeat;
 }
-
+.pro-contxt{
+    font-size: 24px;
+}
 .xg-right a{
     color: #000;
 }
 .xg-right a:hover{
     color:#84B263
 }
-
-.money{
-    color: red;
-}
 .h2-score{
     background:rgb(245,245,245);
 }
 .next-pro{
-    text-align: center;
     margin-top: 25px;
 }
 .next-pro a{ 
@@ -886,7 +882,7 @@ body{
 .next-pro a:hover{
     color: blue;
 }
-.next-imgbg{  
+.next-imgbg{
     margin-right: 15px;
     text-indent: 2em;
     background: url("../images/next.png")no-repeat left center;
